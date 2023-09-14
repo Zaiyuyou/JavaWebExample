@@ -14,9 +14,9 @@ public class HelloServlet implements Servlet {
     @Override
     public void service(ServletRequest servletRequest, ServletResponse
             servletResponse) throws ServletException, IOException {
-        System.out.println("Hello server");
+        System.out.println("Hello Servlet!");
         PrintWriter out = servletResponse.getWriter();
-        out.print("Hello Servlet!");
+        out.print("Hello Servlet!\nThen check Your server log");
     }
     @Override
     public String getServletInfo() {
