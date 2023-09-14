@@ -11,7 +11,8 @@
 <br/>
 
 <h2><%= "以下是目前已完成的Http页面跳转目录：" %></h2>
-<a href="h1">Hello Servlet(com.example.HelloServlet)</a>
+
+<a href="h1">Hello Servlet</a>
 
 </body>
 </html>

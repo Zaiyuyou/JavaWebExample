@@ -1,9 +1,16 @@
-# 欢迎使用开源作业库
+# 欢迎使用在与有的开源作业库
 ***
 ## 库简介：
 本库是一个分享关于JavaWeb课程实践内容的项目
 ***
 ## 食用方式：
+
+~~~
+*打开 src 文件夹即可食用*
+"src/main/java" 里面是java文件
+"src/main/webapp" 就是你知道的那个webapp文件夹
+~~~
+
 以com.example.HelloServlet为例<br>
 如果你直接在 IDEA 中使用 Run/Debug<br>
 跳转到的的并不是你在 web.xml 中配置的HelloServlet的页面路径<br>
