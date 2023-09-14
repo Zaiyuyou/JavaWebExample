@@ -5,6 +5,7 @@
 ***
 ## 食用方式：
 以com.example.HelloServlet为例<br>
-如果你直接在IDEA中使用 Run/Debug<br>
-跳转到的的并不是你在web.xml中配置的HelloServlet的页面路径<br>
-而是index.jsp所在的根页面: http://localhost:8080/Gradle___com_example___JavaWebExample_1_0_SNAPSHOT_war <br>
+如果你直接在 IDEA 中使用 Run/Debug<br>
+跳转到的的并不是你在 web.xml 中配置的HelloServlet的页面路径<br>
+而是 index.jsp 所在的根页面: http://localhost:8080/Gradle___com_example___JavaWebExample_1_0_SNAPSHOT_war <br>
+如果需要访问在 web.xml 中配置好的页面路径，可以直接在这个根路径后面添加相对路径即可访问指定页面
