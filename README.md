@@ -6,7 +6,7 @@
 ## 食用方式：
 
 ~~~
-*打开 src 文件夹即可食用*
+打开 src 文件夹即可食用
 "src/main/java" 里面是java文件
 "src/main/webapp" 就是你知道的那个webapp文件夹
 ~~~
