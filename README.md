@@ -5,12 +5,19 @@
 ***
 ## 食用方式：
 
-~~~
-打开 src 文件夹即可食用
-"src/main/java" 里面是java文件
-"src/main/webapp" 就是你知道的那个webapp文件夹
-~~~
 
+打开 src 文件夹即可食用<br>
+"src/main/java" 里面是java文件<br>
+"src/main/webapp" 就是你知道的那个webapp文件夹<br>
+
+**如果需要运行和测试，则运行java文件即可，第一次运行需要编辑IDEA的"运行/调试 配置"**<br>
+**在 "运行/调试 配置" 界面 内点击左上角的 "+" 添加 Tomcat 本地服务器**<br>
+**点击之后先不要着急应用配置，还需要点击右下角的 "修复" 按钮，并且配置运行工件(war或者war_exploded都可以)**<br>
+<br>
+**给IDEA添加和配置 Tomcat 的方式请自行百度**<br>
+
+***
+## web目录须知
 **以com.example.HelloServlet为例**<br>
 如果你直接在 IDEA 中使用 Run/Debug<br>
 跳转到的的并不是你在 web.xml 中配置的HelloServlet的页面路径<br>
