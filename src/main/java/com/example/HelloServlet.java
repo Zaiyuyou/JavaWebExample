@@ -16,7 +16,7 @@ public class HelloServlet implements Servlet {
             servletResponse) throws ServletException, IOException {
         System.out.println("Hello Servlet!");
         PrintWriter out = servletResponse.getWriter();
-        out.print("Hello Servlet!\nThen check Your server log");
+        out.print("Hello Servlet!\nPlease check Your server log");
     }
     @Override
     public String getServletInfo() {
