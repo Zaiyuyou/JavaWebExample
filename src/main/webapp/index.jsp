@@ -13,6 +13,9 @@
 <h2><%= "以下是目前已完成的Http页面跳转目录：" %></h2>
 
 <a href="h1">Hello Servlet</a>
+<a href="s1">Hello Dispatcher</a>
+<a href="SubmitName">Hello Dispatcher</a>
+
 
 </body>
 </html>
