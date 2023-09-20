@@ -19,7 +19,16 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StartDispatch</servlet-name>
-        <url-pattern>/sd1</url-pattern>
+        <url-pattern>/StartDispatch1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StartRedirect</servlet-name>
+        <servlet-class>com.example.StartRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartRedirect</servlet-name>
+        <url-pattern>/StartRedirect1</url-pattern>
     </servlet-mapping>
 
     <servlet>
