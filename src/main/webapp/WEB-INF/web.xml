@@ -14,12 +14,12 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Servlet1</servlet-name>
-        <servlet-class>com.example.Servlet1</servlet-class>
+        <servlet-name>StartDispatch</servlet-name>
+        <servlet-class>com.example.StartDispatch</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Servlet1</servlet-name>
-        <url-pattern>/s1</url-pattern>
+        <servlet-name>StartDispatch</servlet-name>
+        <url-pattern>/sd1</url-pattern>
     </servlet-mapping>
 
     <servlet>

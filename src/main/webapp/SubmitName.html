@@ -2,13 +2,24 @@
 <html lang="cn">
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>尝试将内容在Servlet容器间转发</title>
 </head>
 <body>
-<form action="s1" method="get">
-    来者可留下姓名？<br>
-    <input type="text" name="username"><br>
-    <input type="submit" value="提交">
+
+
+
+
+<form action="sd1" method="get">
+    来者可留下明文？<br>
+    <input type="text" name="usertext"><br>
+    <input type="submit" value="提交Get请求">
+</form>
+
+
+<form action="sd1" method="post">
+    来者可留下密文？<br>
+    <input type="text" name="usertext"><br>
+    <input type="submit" value="提交Post请求">
 </form>
 </body>
 </html>
