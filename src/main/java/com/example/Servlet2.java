@@ -15,7 +15,12 @@ public class Servlet2 extends HttpServlet {
 
         //随便新建一个屏幕打印器并打印一些字符
         PrintWriter out = response.getWriter();
-        out.print(" | Hello,Http Get 2");
+        out.print("Hello,Http Get 2 <br>");
+
+        //获取请求中的对象并在屏幕中打印
+        out.print("明文: ");
+        out.print(request.getParameter("usertext"));
+        out.print("<br>");
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -24,6 +29,11 @@ public class Servlet2 extends HttpServlet {
 
         //随便新建一个屏幕打印器并打印一些字符
         PrintWriter out = response.getWriter();
-        out.print(" | Hello,Http Post 2");
+        out.print("Hello,Http Post 2 <br>");
+
+        //获取请求中的对象并在屏幕中打印
+        out.print("密文: ");
+        out.print(request.getParameter("usertext"));
+        out.print("<br>");
     }
 }

@@ -14,12 +14,18 @@ public class StartRedirect extends HttpServlet {
         //设置连接样式和字符编码格式
         response.setContentType("text/html;charset=utf-8");
 
-        //随便新建一个屏幕打印器并打印一些字符
-        PrintWriter out = response.getWriter();
-        out.print("Hello,Redirect Get 1");
+
+        System.out.print("Hello,Redirect Get Starting! <br>");
+
+        //累了，睡一会……
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         //重定向get请求
-        response.sendRedirect("s2");
+        response.sendRedirect("FinishRedirect1");
 
 
 
@@ -30,12 +36,18 @@ public class StartRedirect extends HttpServlet {
         //设置连接样式和字符编码格式
         response.setContentType("text/html;charset=utf-8");
 
-        //随便新建一个屏幕打印器并打印一些字符
-        PrintWriter out = response.getWriter();
-        out.print("Hello,Redirect Post 1");
+
+        System.out.print("Hello,Redirect Post Starting! <br>");
+
+        //累了，睡一会……
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         //重定向Post请求
-        response.sendRedirect("s2");
+        response.sendRedirect("FinishRedirect1");
 
     }
 }

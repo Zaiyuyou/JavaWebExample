@@ -16,7 +16,12 @@ public class StartDispatch extends HttpServlet {
 
         //随便新建一个屏幕打印器并打印一些字符
         PrintWriter out = response.getWriter();
-        out.print("Hello,Dispatch Get 1");
+        out.print("Hello,Dispatch Get 1 <br>");
+
+        //获取请求中的对象并在屏幕中打印
+        out.print("明文: ");
+        out.print(request.getParameter("usertext"));
+        out.print("<br>");
 
         //通过request类方法新建请求转发器并转发请求
         RequestDispatcher rd = request.getRequestDispatcher("s2");
@@ -37,7 +42,12 @@ public class StartDispatch extends HttpServlet {
 
         //随便新建一个屏幕打印器并打印一些字符
         PrintWriter out = response.getWriter();
-        out.print("Hello,Dispatch Post 1");
+        out.print("Hello,Dispatch Post 1 <br>");
+
+        //获取请求中的对象并在屏幕中打印
+        out.print("密文: ");
+        out.print(request.getParameter("usertext"));
+        out.print("<br>");
 
         //通过request类方法新建请求转发器并转发请求
         RequestDispatcher rd = request.getRequestDispatcher("s2");
