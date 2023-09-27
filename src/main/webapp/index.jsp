@@ -16,7 +16,8 @@
 <a href="StartDispatch1">Hello Dispatcher</a><br/>
 <a href="SubmitText.html">Submit Text & Dispatcher witch Parameter</a><br/>
 <a href="StartRedirect1">Hello Redirect</a><br/>
-
+<a href="StudentRegister.html">Student Register</a><br/>
+<a href="Login.html">Student Login</a><br/>
 
 </body>
 </html>

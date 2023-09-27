@@ -14,20 +14,29 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>StartDispatch</servlet-name>
-        <servlet-class>com.example.StartDispatch</servlet-class>
+        <servlet-name>StartDispatch1</servlet-name>
+        <servlet-class>com.example.StartDispatch1</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>StartDispatch</servlet-name>
+        <servlet-name>StartDispatch1</servlet-name>
         <url-pattern>/StartDispatch1</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>StartRedirect</servlet-name>
-        <servlet-class>com.example.StartRedirect</servlet-class>
+        <servlet-name>StartDispatch2</servlet-name>
+        <servlet-class>com.example.StartDispatch2</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>StartRedirect</servlet-name>
+        <servlet-name>StartDispatch2</servlet-name>
+        <url-pattern>/StartDispatch2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StartRedirect1</servlet-name>
+        <servlet-class>com.example.StartRedirect1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartRedirect1</servlet-name>
         <url-pattern>/StartRedirect1</url-pattern>
     </servlet-mapping>
 
@@ -42,6 +51,16 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>com.example.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
         <servlet-name>Servlet2</servlet-name>
         <servlet-class>com.example.Servlet2</servlet-class>
     </servlet>
@@ -49,4 +68,25 @@
         <servlet-name>Servlet2</servlet-name>
         <url-pattern>/s2</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OutJpg</servlet-name>
+        <servlet-class>com.example.OutJpg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OutJpg</servlet-name>
+        <url-pattern>/OutJpg</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginProcess</servlet-name>
+        <servlet-class>com.example.LoginProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginProcess</servlet-name>
+        <url-pattern>/LoginProcess</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>

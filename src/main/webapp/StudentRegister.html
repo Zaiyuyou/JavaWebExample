@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎新同学！</title>
+</head>
+<body>
+<form action="StartDispatch2" method="post">
+    <label>
+        姓名：
+        <input type="text" name="name">
+    </label><br>
+    <label>
+        密码：
+        <input type="password" name="pwd">
+    </label><br>
+    <label>
+        电子邮件：
+        <input type="email" name="email">
+    </label><br>
+    <label>
+        出生日期：
+        <input type="date" name="birthday">
+    </label><br>
+    性 别<label>
+    <input type="radio" name="sex" value="男">
+    男<br>
+    <input type="radio" name="sex" value="女">
+    女<br>
+</label>
+
+    <label>
+        所在城市
+        <select name="city">
+            <option value="北京">北京</option>
+            <option value="上海">上海</option>
+            <option value="南昌">南昌</option>
+        </select>
+    </label><br>
+    <label>
+        喜欢的颜色
+        <input type="color" name="color">
+    </label><br>
+    头像<input type="file" name="file"
+               accept="image/jpeg,image/png"><br><br>
+    <input type="submit" value="注册">
+    <input type="reset">
+</form>
+</body>
+</html>
