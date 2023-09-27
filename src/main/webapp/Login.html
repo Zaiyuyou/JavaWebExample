@@ -2,13 +2,21 @@
 <html lang="cn">
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>欢迎新同学！</title>
 </head>
 <body>
 <form action="LoginProcess" method="post">
-    用户名<input type="text" name="loginName"><br/>
-    密码<input type="password" name="loginPwd"><br/>
-    <input type="submit" value="提交">
+    <label>
+        姓名：
+        <input type="text" name="name">
+    </label><br>
+    <label>
+        密码：
+        <input type="password" name="pwd">
+    </label><br>
+
+    <input type="submit" value="登陆">
+    <input type="reset">
 </form>
 </body>
 </html>
