@@ -17,7 +17,7 @@
 <a href="SubmitText.html">Submit Text & Dispatcher witch Parameter</a><br/>
 <a href="StartRedirect1">Hello Redirect</a><br/>
 <a href="StudentRegister.html">Student Register</a><br/>
-<a href="Login.html">Student Login</a><br/>
-
+<a href="login.html">Student Login</a><br/>
+<a href="jsp1.jsp">JSP Test</a><br/>
 </body>
 </html>

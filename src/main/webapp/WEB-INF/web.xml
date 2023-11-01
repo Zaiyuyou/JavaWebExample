@@ -80,11 +80,11 @@
 
     <servlet>
         <servlet-name>LoginProcess</servlet-name>
-        <servlet-class>com.example.LoginProcess</servlet-class>
+        <servlet-class>com.example.action.LoginProcessAction</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginProcess</servlet-name>
-        <url-pattern>/LoginProcess</url-pattern>
+        <url-pattern>/loginProcess.do</url-pattern>
     </servlet-mapping>
 
 

@@ -1,15 +1,13 @@
-package com.example;
+package com.example.action;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.NavigableMap;
 
-public class LoginProcess extends HttpServlet {
+public class LoginProcessAction extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -28,26 +26,38 @@ public class LoginProcess extends HttpServlet {
 
         //随便新建一个屏幕打印器并打印一些字符
         PrintWriter out = response.getWriter();
-        out.print("<br>Processing Your Login Request ...");
+        out.print("Processing Your Login Request ...<br>");
 
         //获取请求中的对象并在屏幕中打印
-        String loginName = request.getParameter("name");
-        String loginPwd = request.getParameter("pwd");
+        String loginName = request.getParameter("loginName");
+        String loginPwd = request.getParameter("loginPwd");
 
-
+        if (loginName.isEmpty()) {
+            response.sendRedirect("main.html?loginName");
+//            request.getRequestDispatcher("main.html").include(request, response);
+            out.print("Login As a Visitor<br>");
+            return;
+        }
 
         if (loginName.equals(adminName)) {
             if (loginPwd.equals(adminPwd)){
-                RequestDispatcher success = request.getRequestDispatcher("main.html");
-                success.include(request, response);
+
+                response.sendRedirect("main.html");
+//                request.getRequestDispatcher("main.html").include(request, response);
+                out.print("Login As a User!<br>");
+                out.print("Username:" + loginName);
             }
             else{
-                out.print("<br>Password is Wrong!");
+                out.print("Password is Wrong!<br>");
             }
         }
         else{
-            out.print("<br>The user" + loginName + "dosen't exist!");
+            out.print("The user " + loginName + " doesn't exist!<br>");
         }
+
+
+//        response
+
 
 
     }
